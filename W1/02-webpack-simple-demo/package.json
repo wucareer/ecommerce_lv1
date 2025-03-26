@@ -1,0 +1,18 @@
+{
+  "name": "webpack-simple-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start":"node ./src/index.js",
+    "build": "webpack --config webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "webpack": "^5.98.0",
+    "webpack-cli": "^6.0.1"
+  }
+}
