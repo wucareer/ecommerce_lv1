@@ -1,0 +1,34 @@
+
+import React, { useState } from 'react'
+import reduce_icon from '../../assets/reduce_icon.png'
+import plus_icon from '../../assets/plus_icon.png'
+import './index.css'
+
+export default function NumOperation(props) {
+    const { onChange = () => { } } = props;
+    const [value, setValue] = useState(1)
+
+
+    const count = (action) => {
+        if (action === 'reduce' && value > 0) {
+
+            setValue(value - 1)
+            onChange(value)
+        } else if (action === 'plus') {
+            setValue(value + 1)
+            onChange(value)
+        }
+
+    }
+    return (
+        <div className='numOperation'>
+            <div className='num-btn' >
+                <img src={reduce_icon} onClick={() => { count('reduce') }} alt="" srcSet="" />
+            </div>
+            <div className='num-value'>{value}</div>
+            <div className='num-btn' >
+                <img src={plus_icon} onClick={() => { count('plus') }} alt="" srcSet="" />
+            </div>
+        </div>
+    )
+}

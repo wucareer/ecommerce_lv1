@@ -1,0 +1,35 @@
+.cart-page {
+    background-color: #f5f7fa;
+    min-height: 100vh;
+
+    .cart-container {
+        width: 1500px;
+        margin: 0px auto 0 auto;
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-between;
+
+        .left {
+            width: 1130px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-sizing: border-box;
+            padding: 30px;
+
+            .cart-select-all {
+                display: flex;
+                align-items: center;
+
+            }
+
+            .cart-items {
+                .cart-item {
+                    margin-top: 20px;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+
+    }
+}

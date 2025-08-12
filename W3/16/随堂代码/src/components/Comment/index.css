@@ -1,0 +1,21 @@
+.comment {
+
+    display: flex;
+    .comment-body{
+        .comment-header{
+            font-weight: 600;
+            font-size: 18px;
+        }
+        .comment-content{
+            margin-top: 14px;
+        }
+        .comment-imgs{
+            margin-top: 14px;
+            display: flex;
+            margin-left: -10px;
+            img{
+                margin-right: 10px;
+            }
+        }
+    }
+}

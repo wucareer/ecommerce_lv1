@@ -1,0 +1,44 @@
+{
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended" // 如果是React项目，请包含此行
+    ],
+    "rules": {
+        // 缩进设置为2个空格
+        "indent": [
+            "warn",
+            4
+        ],
+        // 在数组字面量的方括号内强制不使用空格 (fixable)
+        "array-bracket-spacing": [
+            "off",
+            "never"
+        ],
+        // 在对象字面量的花括号内强制不使用空格 (fixable)
+        "object-curly-spacing": [
+            "error",
+            "never"
+        ],
+        "no-unused-vars": [
+            "warn"
+        ],
+        "object-curly-spacing": [
+            "off"
+        ],
+        "react/react-in-jsx-scope":[
+            "off"
+        ],
+        "react/prop-types":[
+            "off"
+        ],
+        "no-debugger":["off"],
+          "react/display-name": ["off"]
+    }
+}
